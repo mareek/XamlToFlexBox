@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox for XAML programmers</title>
+    <style>
+        div {
+            border: 2px chartreuse solid;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        body>div {
+            width: 500px;
+        }
+
+        .stack-panel-vertical {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stack-panel-horizontal {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .wrap-panel {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrap-panel>div {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>StackPanel orientation:Vertical</h3>
+    <div class="stack-panel-vertical">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>StackPanel orientation:horizontal</h3>
+    <div class="stack-panel-horizontal">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h3>WrapPanel</h3>
+    <div class="wrap-panel">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
